@@ -1,0 +1,7 @@
+C:\Users\Sven Streams\source\repos\ActiveXExample\ActiveXExampleInstaller\bin\Debug\cab1.cab
+C:\Users\Sven Streams\source\repos\ActiveXExample\ActiveXExampleInstaller\bin\Debug\ActiveXExampleInstaller.msi
+C:\Users\Sven Streams\source\repos\ActiveXExample\ActiveXExampleInstaller\bin\Debug\ActiveXExampleInstaller.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\ActiveXExampleInstaller.wixproj.BindContentsFileListnull.txt
+obj\Debug\ActiveXExampleInstaller.wixproj.BindOutputsFileListnull.txt
+obj\Debug\ActiveXExampleInstaller.wixproj.BindBuiltOutputsFileListnull.txt

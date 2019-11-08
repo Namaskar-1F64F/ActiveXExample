@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="ActiveXExampleInstaller" Language="1033" Version="1.0.0.0" Manufacturer="Example" UpgradeCode="aa943a82-b178-41d0-bb3d-1a313be27d05">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="ActiveXExampleInstaller" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="ActiveXExampleInstaller" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="ActiveXExample" Guid="FD6328E4-C5EF-4D07-A229-8B807938C166">
+        <File Id="ActiveXExample" Source="ActiveXExample.dll" KeyPath="yes"/>
+      </Component>
+		</ComponentGroup>
+	</Fragment>
+  <Fragment>
+    <DirectoryRef Id="TARGETDIR">
+      <Directory Id="dirF61F29476EFFBE4DCF23922CD4690206" Name="ActiveXExampleInstaller" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="TARGETDIR">
+      <Directory Id="dirF61F29476EFFBE4DCF23922CD4690206" Name="ActiveXExampleInstaller" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dirF61F29476EFFBE4DCF23922CD4690206">
+      <Component Id="cmp4310CF0D4857C597D7070A51399E706F" Guid="{2F17ACE1-6724-48DB-B686-E06E533C487B}">
+        <Class Id="{DF268E12-5518-35BE-8B35-78D917F905CD}" Context="InprocServer32" Description="ActiveXExample.FileSaver" ThreadingModel="both" ForeignServer="mscoree.dll">
+          <ProgId Id="ActiveXExample" Description="ActiveXExample.FileSaver" />
+        </Class>
+        <Class Id="{EC38E650-78C5-3B95-BCC6-3DC61FAE8DAC}" Context="InprocServer32" Description="ActiveXExample.IObjectSafetyImpl" ThreadingModel="both" ForeignServer="mscoree.dll">
+          <ProgId Id="ActiveXExample.IObjectSafetyImpl" Description="ActiveXExample.IObjectSafetyImpl" />
+        </Class>
+        <File Id="fil619BB928D2EC267D179B81A4D461C2A1" KeyPath="yes" Source="SourceDir\ActiveXExample.dll" />
+        <ProgId Id="Record" />
+        <RegistryValue Root="HKCR" Key="CLSID\{DF268E12-5518-35BE-8B35-78D917F905CD}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{DF268E12-5518-35BE-8B35-78D917F905CD}\InprocServer32\1.0.0.0" Name="Class" Value="ActiveXExample.FileSaver" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{DF268E12-5518-35BE-8B35-78D917F905CD}\InprocServer32\1.0.0.0" Name="Assembly" Value="ActiveXExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{DF268E12-5518-35BE-8B35-78D917F905CD}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{DF268E12-5518-35BE-8B35-78D917F905CD}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil619BB928D2EC267D179B81A4D461C2A1]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{DF268E12-5518-35BE-8B35-78D917F905CD}\InprocServer32" Name="Class" Value="ActiveXExample.FileSaver" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{DF268E12-5518-35BE-8B35-78D917F905CD}\InprocServer32" Name="Assembly" Value="ActiveXExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{DF268E12-5518-35BE-8B35-78D917F905CD}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{DF268E12-5518-35BE-8B35-78D917F905CD}\InprocServer32" Name="CodeBase" Value="file:///[#fil619BB928D2EC267D179B81A4D461C2A1]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{EC38E650-78C5-3B95-BCC6-3DC61FAE8DAC}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{EC38E650-78C5-3B95-BCC6-3DC61FAE8DAC}\InprocServer32\1.0.0.0" Name="Class" Value="ActiveXExample.IObjectSafetyImpl" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{EC38E650-78C5-3B95-BCC6-3DC61FAE8DAC}\InprocServer32\1.0.0.0" Name="Assembly" Value="ActiveXExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{EC38E650-78C5-3B95-BCC6-3DC61FAE8DAC}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{EC38E650-78C5-3B95-BCC6-3DC61FAE8DAC}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil619BB928D2EC267D179B81A4D461C2A1]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{EC38E650-78C5-3B95-BCC6-3DC61FAE8DAC}\InprocServer32" Name="Class" Value="ActiveXExample.IObjectSafetyImpl" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{EC38E650-78C5-3B95-BCC6-3DC61FAE8DAC}\InprocServer32" Name="Assembly" Value="ActiveXExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{EC38E650-78C5-3B95-BCC6-3DC61FAE8DAC}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{EC38E650-78C5-3B95-BCC6-3DC61FAE8DAC}\InprocServer32" Name="CodeBase" Value="file:///[#fil619BB928D2EC267D179B81A4D461C2A1]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{5D5309B8-883A-3AF8-9853-7590D16D1AC8}\1.0.0.0" Name="Class" Value="ActiveXExample.ObjectSafetyOptions" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{5D5309B8-883A-3AF8-9853-7590D16D1AC8}\1.0.0.0" Name="Assembly" Value="ActiveXExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{5D5309B8-883A-3AF8-9853-7590D16D1AC8}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{5D5309B8-883A-3AF8-9853-7590D16D1AC8}\1.0.0.0" Name="CodeBase" Value="file:///[#fil619BB928D2EC267D179B81A4D461C2A1]" Type="string" Action="write" />
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+</Wix>

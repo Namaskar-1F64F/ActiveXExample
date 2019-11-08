@@ -1,0 +1,9 @@
+C:\Users\Sven Streams\source\repos\ActiveXExample\ActiveXExample\bin\Debug\netstandard2.0\ActiveXExample.deps.json
+C:\Users\Sven Streams\source\repos\ActiveXExample\ActiveXExample\bin\Debug\netstandard2.0\ActiveXExample.dll
+C:\Users\Sven Streams\source\repos\ActiveXExample\ActiveXExample\bin\Debug\netstandard2.0\ActiveXExample.pdb
+C:\Users\Sven Streams\source\repos\ActiveXExample\ActiveXExample\obj\Debug\netstandard2.0\ActiveXExample.csprojAssemblyReference.cache
+C:\Users\Sven Streams\source\repos\ActiveXExample\ActiveXExample\obj\Debug\netstandard2.0\ActiveXExample.csproj.CoreCompileInputs.cache
+C:\Users\Sven Streams\source\repos\ActiveXExample\ActiveXExample\obj\Debug\netstandard2.0\ActiveXExample.AssemblyInfoInputs.cache
+C:\Users\Sven Streams\source\repos\ActiveXExample\ActiveXExample\obj\Debug\netstandard2.0\ActiveXExample.AssemblyInfo.cs
+C:\Users\Sven Streams\source\repos\ActiveXExample\ActiveXExample\obj\Debug\netstandard2.0\ActiveXExample.dll
+C:\Users\Sven Streams\source\repos\ActiveXExample\ActiveXExample\obj\Debug\netstandard2.0\ActiveXExample.pdb
